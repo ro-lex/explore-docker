@@ -1,3 +1,7 @@
+## Run command
+docker build -f Dockerfile.dev .  
+docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules <image>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
