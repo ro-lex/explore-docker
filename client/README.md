@@ -2,6 +2,10 @@
 docker build -f Dockerfile.dev .  
 docker run -p 3000:3000 -v $(pwd):/app -v /app/node_modules <image>
 
+## Test command
+docker build -f Dockerfile.dev .  
+docker run -v $(pwd):/app -v /app/node_modules -it <image> npm run test  
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
